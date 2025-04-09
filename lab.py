@@ -12,7 +12,7 @@ import kagglehub
 import warnings
 from PIL import Image
 from tensorflow.keras.utils import load_img
-#warnings.filterwarnings("ignore")
+# warnings.filterwarnings("ignore")
 
 BASE_DIR = '/Users/flintrose/.cache/kagglehub/datasets/jangedoo/utkface-new/versions/1/utkface_aligned_cropped/UTKFace'
 
@@ -129,3 +129,6 @@ history = model.fit(x=X, y=[y_gender, y_age],
                     batch_size=32, epochs=30, validation_split=0.2)
 
 model.save('model.h5')
+
+
+# peace
